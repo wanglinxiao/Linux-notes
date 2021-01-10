@@ -1,0 +1,2 @@
+zcat hg38.panTro6.all.chain.gz | sed '/^#/d' |gzip -c  > hg38.panTro6.all1.chain.gz
+打开gzip压缩文件，将#开头的行去除，使用gzip -c进行压缩，重定向到另一个.gz文件
